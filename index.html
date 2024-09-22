@@ -44,60 +44,83 @@
     
     
     <main class="mt-5">
-       <div class="card-1 w-11/12 border p-5 rounded-2xl mx-auto">
-        <div class="lg:flex justify-center items-center gap-10">
-            <div>
-                <img src="./assets/noakhali.png" alt="">
-            </div>
-            <div class="lg:w-1/2 space-y-5 my-5">
-                <div class="flex gap-2">
-                    <img src="assets/coin.png" alt="">
-                    <h4 id="noakhali-amount" class="font-bold">100000</h4>
-                    <h4 class="font-bold">BDT</h4>
+       <section id="cards">
+        <div class="card-1 w-11/12 border p-5 rounded-2xl mx-auto">
+            <div class="lg:flex justify-center items-center gap-10">
+                <div>
+                    <img src="./assets/noakhali.png" alt="">
                 </div>
-                <h3 class="font-bold text-2xl">Donate for Flood at Noakhali, Bangladesh</h3>
-                <p>In 2024, Noakhali faced severe flooding due to heavy rainfall and rising river levels. Over 20 lakh (2 million) people were affected as homes, roads, and crops were submerged, with seven municipalities severely impacted. The floods caused widespread waterlogging and disrupted daily life, leading to school closures and relief efforts by local authorities</p>
-                <input id="input-noakhali" class="w-full p-4 border border-gray-300 rounded-lg" type="text" name="" id="" placeholder="Write Donation Amount">
-                <button id="btn-noakhali" class="btn btn-lg bg-btnPrimary w-full text-lg font-bold">Donate Now</button>
-            </div>
-        </div>
-       </div>
-       <div class="card-1 w-11/12 border p-5 rounded-2xl mx-auto">
-        <div class="lg:flex justify-center items-center gap-10">
-            <div>
-                <img src="./assets/feni.png" alt="">
-            </div>
-            <div class="lg:w-1/2 space-y-5 my-5">
-                <div class="flex gap-2">
-                    <img src="assets/coin.png" alt="">
-                    <h4 id="feni-amount" class="font-bold">100000</h4>
-                    <h4 class="font-bold">BDT</h4>
+                <div class="lg:w-1/2 space-y-5 my-5">
+                    <div class="flex gap-2">
+                        <img src="assets/coin.png" alt="">
+                        <h4 id="noakhali-amount" class="font-bold">100000</h4>
+                        <h4 class="font-bold">BDT</h4>
+                    </div>
+                    <h3 class="font-bold text-2xl">Donate for Flood at Noakhali, Bangladesh</h3>
+                    <p>In 2024, Noakhali faced severe flooding due to heavy rainfall and rising river levels. Over 20 lakh (2 million) people were affected as homes, roads, and crops were submerged, with seven municipalities severely impacted. The floods caused widespread waterlogging and disrupted daily life, leading to school closures and relief efforts by local authorities</p>
+                    <input id="input-noakhali" class="w-full p-4 border border-gray-300 rounded-lg" type="text" name="" id="" placeholder="Write Donation Amount">
+                    <button id="btn-noakhali" onclick="my_modal_1.showModal()" class="btn btn-lg bg-btnPrimary w-full text-lg font-bold">Donate Now</button>
                 </div>
-                <h3 class="font-bold text-2xl">Donate for Flood at Feni, Bangladesh</h3>
-                <p>In August 2024, severe floods struck Feni district in southeastern Bangladesh, displacing hundreds of thousands and submerging over 100 villages. Triggered by heavy monsoon rains and water releases from upstream in India, the floods caused widespread damage to homes, infrastructure, and agriculture. Over 350,000 people were left without power, and critical rescue operations were launched to assist those stranded. Efforts to manage the disaster continue, with extensive damage reported to fisheries and farmlands in the region</p>
-                <input id="input-feni" class="w-full p-4 border border-gray-300 rounded-lg" type="text" name="" id="" placeholder="Write Donation Amount">
-                <button id="btn-feni" class="btn btn-lg bg-btnPrimary w-full text-lg font-bold">Donate Now</button>
             </div>
-        </div>
-       </div>
-       <div class="card-1 w-11/12 border p-5 rounded-2xl mx-auto">
-        <div class="lg:flex justify-center items-center gap-10">
-            <div>
-                <img src="./assets/quota-protest.png" alt="">
-            </div>
-            <div class="lg:w-1/2 space-y-5 my-5">
-                <div class="flex gap-2">
-                    <img src="assets/coin.png" alt="">
-                    <h4 id="quota-amount" class="font-bold">100000</h4>
-                    <h4 class="font-bold">BDT</h4>
+           </div>
+           <div class="card-1 w-11/12 border p-5 rounded-2xl mx-auto">
+            <div class="lg:flex justify-center items-center gap-10">
+                <div>
+                    <img src="./assets/feni.png" alt="">
                 </div>
-                <h3 class="font-bold text-2xl">Donate for Injured Students Participated in Quota Movement BD</h3>
-                <p>The 2024 Bangladesh quota reform movement reignited over discontent with the country's civil service quota system, particularly the 30% reservation for descendants of independence war veterans. Protests, led primarily by students and young professionals, called for reducing quota percentages, prioritizing merit in job recruitment, and ensuring transparency. These protests intensified following a court ruling to reinstate the quota, which had been abolished after similar protests in 2018. The movement sparked widespread demonstrations, internet shutdowns, and mass arrests, as well as confrontations with security forces</p>
-                <input id="input-quota" class="w-full p-4 border border-gray-300 rounded-lg" type="text" name="" id="" placeholder="Write Donation Amount">
-                <button id="btn-quota" class="btn btn-lg bg-btnPrimary w-full text-lg font-bold">Donate Now</button>
+                <div class="lg:w-1/2 space-y-5 my-5">
+                    <div class="flex gap-2">
+                        <img src="assets/coin.png" alt="">
+                        <h4 id="feni-amount" class="font-bold">100000</h4>
+                        <h4 class="font-bold">BDT</h4>
+                    </div>
+                    <h3 class="font-bold text-2xl">Donate for Flood at Feni, Bangladesh</h3>
+                    <p>In August 2024, severe floods struck Feni district in southeastern Bangladesh, displacing hundreds of thousands and submerging over 100 villages. Triggered by heavy monsoon rains and water releases from upstream in India, the floods caused widespread damage to homes, infrastructure, and agriculture. Over 350,000 people were left without power, and critical rescue operations were launched to assist those stranded. Efforts to manage the disaster continue, with extensive damage reported to fisheries and farmlands in the region</p>
+                    <input id="input-feni" class="w-full p-4 border border-gray-300 rounded-lg" type="text" name="" id="" placeholder="Write Donation Amount">
+                    <button id="btn-feni" onclick="my_modal_1.showModal()" class="btn btn-lg bg-btnPrimary w-full text-lg font-bold">Donate Now</button>
+                </div>
             </div>
-        </div>
-       </div>
+           </div>
+           <div class="card-1 w-11/12 border p-5 rounded-2xl mx-auto">
+            <div class="lg:flex justify-center items-center gap-10">
+                <div>
+                    <img src="./assets/quota-protest.png" alt="">
+                </div>
+                <div class="lg:w-1/2 space-y-5 my-5">
+                    <div class="flex gap-2">
+                        <img src="assets/coin.png" alt="">
+                        <h4 id="quota-amount" class="font-bold">100000</h4>
+                        <h4 class="font-bold">BDT</h4>
+                    </div>
+                    <h3 class="font-bold text-2xl">Donate for Injured Students Participated in Quota Movement BD</h3>
+                    <p>The 2024 Bangladesh quota reform movement reignited over discontent with the country's civil service quota system, particularly the 30% reservation for descendants of independence war veterans. Protests, led primarily by students and young professionals, called for reducing quota percentages, prioritizing merit in job recruitment, and ensuring transparency. These protests intensified following a court ruling to reinstate the quota, which had been abolished after similar protests in 2018. The movement sparked widespread demonstrations, internet shutdowns, and mass arrests, as well as confrontations with security forces</p>
+                    <input id="input-quota" class="w-full p-4 border border-gray-300 rounded-lg" type="text" name="" id="" placeholder="Write Donation Amount">
+                    <button id="btn-quota" onclick="my_modal_1.showModal()" class="btn btn-lg bg-btnPrimary w-full text-lg font-bold">Donate Now</button>
+                </div>
+            </div>
+           </div>
+       </section>
+       <!-- history section -->
+        <section>
+            <div id="history" class="hidden">
+            </div>
+        </section>
+     <!-- Modal section -->
+     <section>
+        <dialog id="my_modal_1" class="modal">
+            <form method="dialog" class="modal-box px-5 py-10 flex flex-col justify-center items-center space-y-5">
+                <h3 class="font-bold text-4xl text-black my-5">Congrats!</h3>
+                <img src="./assets/coin.png" alt="">
+                <div class="text-center">
+                    <p class="text-xl font-medium">You Have Donated for Humankind</p>
+                </div>
+                <p class="my-2 text-2xl font-bold">Successfully</p>
+                <button id="btn-mod"
+                    class="btn bg-gray-200 px-16 btn-md hover:bg-black hover:text-white transition-colors ease-in duration-300 text-lg">Close
+                    Confirmation</button>
+            </form>
+        </dialog>
+    </section>
     </main>
     <script src="js/actions.js"></script>
     <script src="js/common.js"></script>

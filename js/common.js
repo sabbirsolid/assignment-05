@@ -16,4 +16,3 @@ function showSection(id){
 function hideSection(id){
     document.getElementById(id).classList.add('hidden');
 }
-

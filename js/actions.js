@@ -1,3 +1,4 @@
+const dateToday = new Date();
 document.getElementById('btn-noakhali').addEventListener('click',function(event){
     event.preventDefault();
     const addAmount = getInputFieldValueById('input-noakhali');
@@ -8,6 +9,12 @@ document.getElementById('btn-noakhali').addEventListener('click',function(event)
     if(addAmount > 0 && isNaN(addAmount)===false){
         document.getElementById('noakhali-amount').innerText = newNoakhali;
         document.getElementById('total-current-balance').innerText = newTotal;
+        const history = document.createElement('div');
+        history.classList.add('m-10');
+        history.innerHTML = `
+        <h3 class="font-bold text-center">${addAmount} Taka donated for Noakhali-Flood, Bangladesh</h3>
+        <p class="text-center">Date: ${dateToday}</p>`
+        document.getElementById('history').appendChild(history);
     }
     else{alert('invalid input')}
 });
@@ -22,6 +29,12 @@ document.getElementById('btn-feni').addEventListener('click',function(event){
     if(addAmount > 0 && isNaN(addAmount)===false){
         document.getElementById('feni-amount').innerText = newNoakhali;
         document.getElementById('total-current-balance').innerText = newTotal;
+        const history = document.createElement('div');
+        history.classList.add('m-10');
+        history.innerHTML = `
+        <h3 class="font-bold text-center">${addAmount} Taka donated for Feni-Flood, Bangladesh</h3>
+        <p class="text-center">Date: ${dateToday}</p>`
+        document.getElementById('history').appendChild(history);
     }
     else{alert('invalid input')}
 });
@@ -36,8 +49,21 @@ document.getElementById('btn-quota').addEventListener('click',function(event){
     if(addAmount > 0 && isNaN(addAmount)===false){
         document.getElementById('quota-amount').innerText = newNoakhali;
         document.getElementById('total-current-balance').innerText = newTotal;
+        const history = document.createElement('div');
+        history.classList.add('m-10');
+        history.innerHTML = `
+        <h3 class="font-bold text-center">${addAmount} Taka donated for Injured Students in Quota Movement, Bangladesh</h3>
+        <p class="text-center">Date: ${dateToday}</p>`
+        document.getElementById('history').appendChild(history);
     }
-    else{alert('invalid input')}
+    else {alert('invalid input')}
 });
 
-document.getElementById()
+document.getElementById('btn-history').addEventListener('click',function(){
+    showSection('history');
+    hideSection('cards');
+})
+document.getElementById('btn-donate').addEventListener('click',function(){
+    hideSection('history');
+    showSection('cards');
+})
