@@ -15,10 +15,9 @@ document.getElementById('btn-noakhali').addEventListener('click',function(event)
         <h3 class="font-bold text-center">${addAmount} Taka donated for Noakhali-Flood, Bangladesh</h3>
         <p class="text-center">Date: ${dateToday}</p>`
         document.getElementById('history').appendChild(history);
-        const s = document.getElementById('modal').style.display = "block";
-        
+        modal.showModal();
     }
-    else{alert('invalid input')}
+    else{alert('Invalid Input');}
 });
 
 document.getElementById('btn-feni').addEventListener('click',function(event){
@@ -37,8 +36,9 @@ document.getElementById('btn-feni').addEventListener('click',function(event){
         <h3 class="font-bold text-center">${addAmount} Taka donated for Feni-Flood, Bangladesh</h3>
         <p class="text-center">Date: ${dateToday}</p>`
         document.getElementById('history').appendChild(history);
+        modal.showModal();
     }
-    else{alert('invalid input')}
+    else{alert('Invalid Input')}
 });
 
 document.getElementById('btn-quota').addEventListener('click',function(event){
@@ -57,8 +57,9 @@ document.getElementById('btn-quota').addEventListener('click',function(event){
         <h3 class="font-bold text-center">${addAmount} Taka donated for Injured Students in Quota Movement, Bangladesh</h3>
         <p class="text-center">Date: ${dateToday}</p>`
         document.getElementById('history').appendChild(history);
+        modal.showModal();
     }
-    else {alert('invalid input')}
+    else {alert('Invalid Input')}
 });
 // history and donate button
 document.getElementById('btn-history').addEventListener('click',function(){
@@ -82,4 +83,3 @@ document.getElementById('btn-donate').addEventListener('click',function(){
 document.getElementById('blog-btn').addEventListener('click', function(){
     window.location.href = "blog.html";
 });
-
