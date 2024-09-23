@@ -16,3 +16,14 @@ function showSection(id){
 function hideSection(id){
     document.getElementById(id).classList.add('hidden');
 }
+
+tailwind.config = {
+    theme: {
+      extend: {
+        colors: {
+          btnPrimary: '#B4F461',
+          navbgColor: '#F9F7F3'
+        }
+      }
+    }
+  }

@@ -58,7 +58,7 @@ document.getElementById('btn-quota').addEventListener('click',function(event){
     }
     else {alert('invalid input')}
 });
-
+// history and donate button
 document.getElementById('btn-history').addEventListener('click',function(){
     showSection('history');
     hideSection('cards');
@@ -75,3 +75,4 @@ document.getElementById('btn-donate').addEventListener('click',function(){
     const donate = document.getElementById('btn-donate');
     donate.style.backgroundColor = '#B4F461'
 });
+
