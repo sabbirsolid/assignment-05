@@ -62,8 +62,16 @@ document.getElementById('btn-quota').addEventListener('click',function(event){
 document.getElementById('btn-history').addEventListener('click',function(){
     showSection('history');
     hideSection('cards');
+    const donate = document.getElementById('btn-donate');
+    donate.style.backgroundColor = 'lightgray'
+    const history = document.getElementById('btn-history');
+    history.style.backgroundColor = '#B4F461'
 })
 document.getElementById('btn-donate').addEventListener('click',function(){
     hideSection('history');
     showSection('cards');
-})
+    const history = document.getElementById('btn-history');
+    history.style.backgroundColor = 'lightgray'
+    const donate = document.getElementById('btn-donate');
+    donate.style.backgroundColor = '#B4F461'
+});
