@@ -9,3 +9,6 @@ window.addEventListener('scroll', () => {
         header.classList.remove('sticky');
     }
 });
+document.getElementById('home-btn').addEventListener('click',function(){
+    window.location.href = 'index.html';
+})

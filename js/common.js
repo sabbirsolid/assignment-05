@@ -16,7 +16,10 @@ function showSection(id){
 function hideSection(id){
     document.getElementById(id).classList.add('hidden');
 }
-
+// modal open function
+function openModal(){
+    document.getElementById('modal').style.display = "block";
+}
 tailwind.config = {
     theme: {
       extend: {

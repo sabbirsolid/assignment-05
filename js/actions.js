@@ -15,6 +15,8 @@ document.getElementById('btn-noakhali').addEventListener('click',function(event)
         <h3 class="font-bold text-center">${addAmount} Taka donated for Noakhali-Flood, Bangladesh</h3>
         <p class="text-center">Date: ${dateToday}</p>`
         document.getElementById('history').appendChild(history);
+        const s = document.getElementById('modal').style.display = "block";
+        
     }
     else{alert('invalid input')}
 });
@@ -74,5 +76,10 @@ document.getElementById('btn-donate').addEventListener('click',function(){
     history.style.backgroundColor = 'lightgray'
     const donate = document.getElementById('btn-donate');
     donate.style.backgroundColor = '#B4F461'
+});
+
+// blog button home button
+document.getElementById('blog-btn').addEventListener('click', function(){
+    window.location.href = "blog.html";
 });
 
