@@ -1,3 +1,4 @@
+// function for extracting amount of money
 function getInputFieldValueById(id){
     const inputValue = document.getElementById(id).value;
     const inputNumber = parseFloat(inputValue);
@@ -9,17 +10,18 @@ function getInnerTextById(id){
     const textToNumber = parseFloat(text);
     return textToNumber;
 }
+// time
+const dateToday = new Date();
+//for calculating and implementing the money
 
+// function for showing and hiding class
 function showSection(id){
     document.getElementById(id).classList.remove('hidden');
 }
 function hideSection(id){
     document.getElementById(id).classList.add('hidden');
 }
-// modal open function
-function openModal(){
-    document.getElementById('modal').style.display = "block";
-}
+
 tailwind.config = {
     theme: {
       extend: {
