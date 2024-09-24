@@ -4,19 +4,16 @@ function amountCalculation(btn_id,input_id,amount_id,motive){
         const userInput = getInputFieldValueById(input_id);
         const currentCardAmount = getInnerTextById(amount_id);
         const totalAmount = getInnerTextById('total-current-balance');
-        for(let check of userInput){
-           if(isNaN(check) === true){
+        
+        if(isNaN(userInput)) {
             alert('Invalid Input');
             document.getElementById(input_id).value = "";
             return;
-           }
-        }
+        }
         const addAmount = parseFloat(userInput);
         const newCardAmount = currentCardAmount + addAmount;
         const newTotal = totalAmount - addAmount;
-        // console.log(addAmount, newCardAmount, newTotal);
-        if(addAmount > 0){
-
+        if(addAmount > 0 || isNaN(userInput)){
             if(totalAmount >= addAmount){
             document.getElementById(amount_id).innerText = newCardAmount;
             document.getElementsByClassName('total-amount').innerText = newTotal;
@@ -40,6 +37,7 @@ function amountCalculation(btn_id,input_id,amount_id,motive){
         }
     });
 }
+
 amountCalculation('btn-noakhali','input-noakhali','noakhali-amount','Noakhali');
 amountCalculation('btn-feni','input-feni','feni-amount','Feni');
 amountCalculation('btn-quota','input-quota','quota-amount','Quota Movement');
