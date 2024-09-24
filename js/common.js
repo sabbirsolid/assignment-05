@@ -1,8 +1,9 @@
 // function for extracting amount of money
 function getInputFieldValueById(id){
     const inputValue = document.getElementById(id).value;
-    const inputNumber = parseFloat(inputValue);
-    return inputNumber;
+    // const inputNumber = parseFloat(inputValue);
+    // return inputNumber;
+    return inputValue;
 }
 
 function getInnerTextById(id){

@@ -1,12 +1,22 @@
 function amountCalculation(btn_id,input_id,amount_id,motive){
     document.getElementById(btn_id).addEventListener('click',function(event){
         event.preventDefault();
-        const addAmount = getInputFieldValueById(input_id);
+        const userInput = getInputFieldValueById(input_id);
         const currentCardAmount = getInnerTextById(amount_id);
         const totalAmount = getInnerTextById('total-current-balance');
+        for(let check of userInput){
+           if(isNaN(check) === true){
+            alert('Invalid Input');
+            document.getElementById(input_id).value = "";
+            return;
+           }
+        }
+        const addAmount = parseFloat(userInput);
         const newCardAmount = currentCardAmount + addAmount;
         const newTotal = totalAmount - addAmount;
-        if(addAmount > 0 && isNaN(addAmount)===false){
+        // console.log(addAmount, newCardAmount, newTotal);
+        if(addAmount > 0){
+
             if(totalAmount >= addAmount){
             document.getElementById(amount_id).innerText = newCardAmount;
             document.getElementsByClassName('total-amount').innerText = newTotal;
